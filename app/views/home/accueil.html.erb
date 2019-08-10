@@ -44,8 +44,8 @@
 			</div>
 		</div>
 		<div class="col-11 col-md-5">
-			<div class="p-0 p-md-4">
-				<%= image_tag "accueil/cooptation.svg", alt:"cooptation", width:"400px", height:"auto", class:"d-inline-block align-top"%>
+			<div class="px-3">
+				<%= image_tag "accueil/cooptation.svg", alt:"cooptation", width:"350px", height:"auto", class:"d-inline-block align-top"%>
 			</div>
 		</div>
 	</div>
@@ -65,7 +65,7 @@
 		<div class="d-none d-md-block col-md-5">
 			<div class="container_i mx-auto">
 				<div class="tache">
-					<%= image_tag "abstract/connection.svg", alt:"reseau professionnel", width:"210px", height:"auto", class:"rounded mx-auto d-block"%>
+					<%= image_tag "abstract/connection.svg", alt:"reseau professionnel", width:"200px", height:"auto", class:"rounded mx-auto d-block"%>
 				</div>
 			</div>
 		</div>
@@ -125,10 +125,10 @@
 </section>
 
 <!--<div class="separator"></div>-->
-<section id="comment_ca_marche" class="mt-0 mt-md-0 p-0" style="position: relative;">
+<section id="comment_ca_marche" class="mt-0 mt-md-0 p-3" style="position: relative;">
 	<div style="position: absolute; top:100px; left:0px; width: 100%; height: auto;">
 		<div class="row justify-content-center">
-			<div class="col-12 col-md-8 p-2 mb-3 align-items-center">
+			<div class="col-12 col-md-10 mb-3 align-items-center">
 				<div class="mt-4">
 					<h2>Notre IA automatise le processus de cooptation en identifiant les contacts Linkedin de vos collaborateurs compatibles avec vos offres d’emploi
 					</h2>
@@ -136,7 +136,7 @@
 			</div>
 		</div>
 		<!--Numero1-->
-		<div class="row justify-content-center">
+		<div class="row justify-content-center p-2">
 			<div class="col-5">
 				<div class="d-flex mt-4 mt-md-5 justify-content-end">
 					<div class="d-flex align-items-center">
@@ -434,13 +434,13 @@
 -->
 
 <section id="avantages" class="my-4" style="position: relative">
-	<div style="position: absolute; top: 0px; left:13%; width: 20%; height: auto;">
+	<div style="position: absolute; top: 6%; left:12%; width: 23%; height: auto;">
 		<%= image_tag "accueil/tache2.svg", alt:"bulle", width:"100%", height:"auto", class:"rounded d-none d-lg-block"%>
 	</div>
-	<div style="position: absolute; top: 0px; left:41%; width: 20%; height: auto;">
+	<div style="position: absolute; top: 6%; left:41%; width: 23%; height: auto;">
 		<%= image_tag "accueil/tache2.svg", alt:"bulle", width:"100%", height:"auto", class:"rounded d-none d-lg-block"%>
 	</div>
-	<div style="position: absolute; top: 0px; left:68%; width: 20%; height: auto;">
+	<div style="position: absolute; top: 6%; left:68%; width: 23%; height: auto;">
 		<%= image_tag "accueil/tache2.svg", alt:"bulle", width:"100%", height:"auto", class:"rounded d-none d-lg-block"%>
 	</div>
 	<div class="">
@@ -470,7 +470,7 @@
 							<div class="col-4"></div>
 							<div class="col-8">
 								<div class="avantages_key">3X</div>
-								<div class="avantages_sub_key pr-4">de taux de rétention en plus</div>
+								<div class="avantages_sub_key">de taux de rétention en plus</div>
 							</div>
 						</div>
 					</div>
@@ -601,7 +601,7 @@
 				<div class="col-md-1"></div>
 				<div class="col-10 col-md-5">
 					<div class="p-5" id="demo_contact">
-						<form>
+						<%=form_tag "/home/accueil", class:"form my-auto", method:"post" do %>
 							<div class="row">
 						    	<div class="col">
 						    		<label for="prenom" class="form_label ">Prénom</label>
@@ -627,7 +627,7 @@
 						  	<div class="row mt-3">
 						  		<div class="col">
 						  			<label for="company_size" class="form_label ">Nombre de collaborateurs</label>
-						     		<select class="form-control" id="exampleFormControlSelect1">
+						     		<select class="form-control" id="company_size" name="employees">
 								    	<option>0 - 100</option>
 								      	<option>100 - 300</option>
 								      	<option>300 - 1000</option>
@@ -641,6 +641,7 @@
 						  		 </div>
 						  	</div>
 						</form>
+						<%end%>
 					</div>
 				</div>
 			</div>

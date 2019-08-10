@@ -10,6 +10,28 @@
   </head>
 
   <body>
+
+        <% flash.each do |key, value| %>
+             <% unless current_page?('/teachers/sign_in')%>
+
+               <% if key == "notice"
+                  key = "success"
+                elsif key == "alert"
+                  key = "warning"
+                elsif key =="error"
+                  key = "danger"
+                end %>
+                    
+                <div class="alert alert-<%= key %>">
+                  <a href="#" data-dismiss="alert" class="close">×</a>
+                  <ul>
+                    <li>
+                      <%= value %>
+                    </li>
+                  </ul>
+                </div>
+              <% end %>
+        <%end%>
     <%= yield %>
   </body>
 </html>
