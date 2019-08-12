@@ -161,13 +161,13 @@ h2{
 	color:white;
 }
 .comment_ca_marche_titre {
-	color:white;
+	color:$bvert;
 	font-weight: bold;
 	font-size: 1.8em;
 }
 
 .comment_ca_marche_text {
-	color: white;
+	color: $grisnoir;
 	font-size: 1.2em;
 }
 
@@ -175,8 +175,8 @@ h2{
 	width: 35px;
 	height: 35px;
 	border-radius:100%;
-	background-color:$violet;
-	border:solid 1px $violet;
+	background-color:$bvert;
+	//border:solid 1px $bvert;
 	color:white;
 	text-align: center;
 }
