@@ -154,7 +154,7 @@ h2{
     background-attachment: scroll;
     background-size:cover;
     background-position: 68% 0,center;
-    height: 71rem;
+    height: 78rem;
 	color:white;
 }
 .comment_ca_marche_titre {
@@ -224,20 +224,36 @@ h2{
 .avantages_key{
 	font-size:3.5em;
 	font-weight: bold;
-	color:$grisnoir;
+	//color:$grisnoir;
+	color:$bvert;
 	margin-bottom: 1px;
 	padding: 0px;
+	text-align: center;
 }
 
 .avantages_sub_key{
-	font-size:1rem;
-	color:$gris;
-	margin-top: -15px;
+	//font-size:1rem;
+	font-size:1.2rem;
+	//color:$gris;
+	color:$bvert;
+	//margin-top: -15px;
 	padding: 0px;
+	text-align: center;
 }
 
 .avantages_sub_text {
 	font-size: 1.2rem;
 	color:$gris;
 	font-weight: 530;
+	text-align: center;
+}
+.num {
+	line-height: 75px;
+    font-size: 36px;
+    color: #f7f6ff;
+    font-weight: 600;
+    width: 35px;
+    height: 35px;
+    background: #5043b7;
+    border-radius: 100px 100px 0 100px;
 }

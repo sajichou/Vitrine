@@ -13,4 +13,7 @@ class HomeController < ApplicationController
 		flash[:notice] = "Merci pour votre intérêt. Nous vous contactons dans les plus brefs délais."
 	end
 
+	def demo
+	end
+
 end

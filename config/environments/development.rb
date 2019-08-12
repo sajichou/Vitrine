@@ -38,13 +38,14 @@ Rails.application.configure do
   config.action_mailer.delivery_method = :smtp
 
   config.action_mailer.smtp_settings = {
-    address:              'smtp.gmail.com',
+   # address:              'smtp.gmail.com',
+    address:              'smtp-relay.sendinblue.com',
     port:                 587,
-    domain:               'gmail.com',
-    user_name:            ENV["GM_USER"],
-    password:             ENV["GM_PWD"],
+    #domain:               'gmail.com',
+    user_name:            ENV["SB_USER"],
+    password:             ENV["SB_PWD"],
     authentication:       :plain,
-    #enable_starttls_auto: true
+    enable_starttls_auto: true
   }
 
   # Print deprecation notices to the Rails logger.

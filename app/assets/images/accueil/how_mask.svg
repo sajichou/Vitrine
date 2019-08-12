@@ -7,9 +7,11 @@
         </radialGradient>
 <!--
         <path id="a" d="M0,0 v544 h1921 V1921,0 Q421,100 0,0 z"/>
-    -->
         <path id="a" d="M0,0 v544 L1100,500 L1921,544 V1921,0 Q421,100 0,0 z"/>
-
+    -->
+        
+        <path id="a" d="M0,0 v544 h1921 V1921,0 Q421,100 0,0 z"/>
+        
     </defs>
     <g fill="none" fill-rule="evenodd" transform="translate(-1 -1)">
         <use fill="url(#c)" xlink:href="#a"/>
