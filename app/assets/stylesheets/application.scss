@@ -34,6 +34,8 @@ $blancgris :#f6fafe;
 html {
 	font-size: 100%;
 	scroll-behavior: smooth;
+	padding:0px;
+	margin:0px;
 }
 
 .bvert {
@@ -69,6 +71,7 @@ h2{
     background-size:cover;
     background-position: 68% 0,center;
     height: 40rem;
+    margin:0px;
 }
 #curved {
 	background-image: image-url("accueil/curved.png");
