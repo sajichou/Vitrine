@@ -51,17 +51,23 @@ html {
 	color:$violet;
 }
 .text {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	color:$gris ;
 }
 h1 {
-	font-size:3rem;
+	font-size:2.5rem;
 }
 h2{
 	font-size:2rem;
-	font-weight: 600;
-	letter-spacing: -.1125rem;
-	line-height: 2.65rem;
+	//font-weight: 600;
+	//letter-spacing: -.1125rem;
+	//line-height: 2.65rem;
+}
+h3{
+	font-size:1.8rem;
+}
+h4{
+	font-size:1.4rem;
 }
 
 #ruban{
@@ -93,6 +99,10 @@ h2{
 	max-width: 500px;
 	padding:20px;
 }
+.container_i {
+	padding:20px;
+}
+
 .dashed {
 	display:flex;
 	-webkit-box-pack: center;
@@ -118,29 +128,42 @@ h2{
 }
 
 .tache{
-	background-image:image-url("accueil/tache.svg");
-	display: flex;
-	-webkit-box-pack: center;
-	justify-content: center;
-	-webkit-box-align: center;
-	align-items: center;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 20.7rem 20.73rem;
-    height: 20.73rem;
-}
-
-.tache2{
 	background-image:image-url("accueil/tache2.svg");
 	display: flex;
 	-webkit-box-pack: center;
 	justify-content: center;
 	-webkit-box-align: center;
 	align-items: center;
-    background-position: center;
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: 20.7rem 20.73rem;
-    height: 20.73rem;
+    background-size: 12.7rem 12.73rem;
+    height: 12.73rem;
+}
+
+.tache2{
+	background-image:image-url("accueil/tache.svg");
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 12.7rem 12.73rem;
+    height: 12.73rem;
+}
+
+.tache3{
+	background-image:image-url("accueil/tache.svg");
+	display: flex;
+	-webkit-box-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	align-items: center;
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: 12.7rem 12.73rem;
+    height: 12.73rem;
 }
 
 .separator {
@@ -161,18 +184,18 @@ h2{
     background-attachment: scroll;
     background-size:cover;
     background-position: 68% 0,center;
-    height: 78rem;
+    height: 70rem;
 	color:white;
 }
 .comment_ca_marche_titre {
 	color:$bvert;
 	font-weight: bold;
-	font-size: 1.8em;
+	//font-size: 1.8em;
 }
 
 .comment_ca_marche_text {
 	color: $grisnoir;
-	font-size: 1.2em;
+	font-size: 1em;
 }
 
 .numero_container {
@@ -210,7 +233,7 @@ h2{
 }
 
 #demo{
-	background-color:$blancgris;
+	//background-color:$blancgris;
 }
 
 #demo_contact {
@@ -250,9 +273,11 @@ h2{
 }
 
 .avantages_sub_text {
-	font-size: 1.2rem;
+	font-size: 0.9rem;
+	padding-left: 15px;
+	padding-right: 15px;
 	color:$gris;
-	font-weight: 530;
+	font-weight: 370;
 	text-align: center;
 }
 .num {
@@ -264,4 +289,14 @@ h2{
     height: 35px;
     background: #5043b7;
     border-radius: 100px 100px 0 100px;
+}
+#footer {
+	background-color:$bvert;
+	color:white;
+}
+.underline {
+    background-image: linear-gradient(to bottom, white, white,);
+    background-repeat: no-repeat;
+    background-size: 100% 0.1em;
+    background-position: 0 100%;
 }
